@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = 5001;
+const PORT = 8080;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -12,6 +12,10 @@ app.use(bodyParser.json());
 const users = [
     { username: 'jitu40375@gmail.com', password: 'password' }
 ];
+
+app.get("/", (req, res) => {
+    res.send("Microservice Backend is running 🚀");
+});
 
 app.post('/register', (req, res) => {
     const { username, password } = req.body;

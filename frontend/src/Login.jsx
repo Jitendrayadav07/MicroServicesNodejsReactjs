@@ -10,7 +10,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5001/login', {
+            const response = await fetch('http://localhost:8080/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username, password }),
@@ -81,7 +81,7 @@ function Login() {
             </div>
 
             <div className="connect-hint">
-                Connect to your Node.js backend at <span>localhost:6000</span>
+                Connect to your Node.js backend at <span>localhost:8080</span>
             </div>
         </div>
     );
