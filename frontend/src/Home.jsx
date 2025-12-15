@@ -55,7 +55,7 @@ function Home() {
                         <div className="step-item">
                             <span className="step-number">2.</span>
                             <div>
-                                Connect to your Node.js server at <span className="code-snippet">http://localhost:8080</span>
+                                Connect to your Node.js server at <span className="code-snippet">http://localhost:7000</span>
                             </div>
                         </div>
 
@@ -69,7 +69,7 @@ function Home() {
                         <div className="step-item">
                             <span className="step-number">4.</span>
                             <div>
-                                Run with: <span className="code-snippet">docker run -p 8080:8080 node-todo-app</span>
+                                Run with: <span className="code-snippet">docker run -p 7000:7000 node-todo-app</span>
                             </div>
                         </div>
                     </div>
